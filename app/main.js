@@ -3,11 +3,9 @@ const net = require("net");
 const hostname = "0.0.0.0";
 const port = 4221;
 
-const server = net.createServer((socket) => {
-    socket.on("close", () => {
-        socket.end();
-        server.close();
-    });
+const server = net.createServer();
+
+server.on("connection", (socket) => {
     socket.on("data", (data) => {
         const request = data.toString();
         const lines = request.split("\r\n");
@@ -29,7 +27,7 @@ const server = net.createServer((socket) => {
         }
         socket.end();
     });
-});
+})
 
 server.listen(port, hostname);
 
