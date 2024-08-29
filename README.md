@@ -6,7 +6,3 @@ This is my implementation in JavaScript of the
 [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) is the
 protocol that powers the web. In this challenge, I've built a HTTP/1.1 server
 that is capable of serving multiple clients.
-
-**Note**: Head over to
-[codecrafters.io](https://app.codecrafters.io/r/comfortable-squirrel-392164) to try the challenge yourself. Use [this link](https://app.codecrafters.io/r/comfortable-squirrel-392164) and get a [one-week free access](https://app.codecrafters.io/r/comfortable-squirrel-392164) (for you and for me too)!
-
